@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    
+    <title>Dashboard Sidebar Menu</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                   <img src="images\Innolator-logo.jpeg" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">INNOLATOR</span>
+                    <span class="profession">Escalating Inovations</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-bulb bx-tada icon' ></i>
+                            <span class="text nav-text">Ideas</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#Docs">
+                            <i class='bx bx-detail icon' ></i>
+                            <span class="text nav-text">Documentation</span>
+                        </a>
+                    </li>
+
+                   
+                    <li class="nav-link">
+                        <a href="#team">
+                            <i class='bx bx-group icon' ></i>
+                            <span class="text nav-text">Our Team</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-bell-ring bx-tada icon' ></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-link" id="theme">
+                        <a href="#themes">
+                            <i class='bx bxs-palette icon' ></i>
+                            <span class="text nav-text" >Themes</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-phone-call icon' ></i>
+                            <span class="text nav-text">Contact Us..!</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                
+                <li class="profile">
+                    <a href="#">
+                        <i class='bx bxs-user-circle icon' ></i>
+                       <span class="text nav-text">My Profile</span>
+                    </a>
+                </li>
+                
+
+                <li class="" id="login">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Log In</span>
+                    </a>
+                </li> 
+
+            </div>
+        </div>
+                                       <!-- THEME COSTOMIZATION -->
+        <div class="costomize-theme" id="costo-theme">
+            <div class="card">
+                <h2>Costomize As You Wish</h2>
+                <p class="">Manage your font size, primary colour and background colour...</p>
+                       <!-- FONT SIZES -->
+                  <div class="font-size">
+                      <h4>Font Size</h4>
+                      <div>
+                           <h6>Aa</h6>
+                         <div class="choose-size">
+                             <span class="font-size-1"></span>
+                             <span class="font-size-2 active"></span>
+                             <span class="font-size-3"></span>
+                             <span class="font-size-4"></span>
+                             <span class="font-size-5"></span>
+                         </div>
+                             <h3>Aa</h3>
+                     </div>
+                  </div>
+                       <!-- PRIMARY COLOURS -->
+                  <div class="color">
+                      <h4>Primary Colour</h4>
+                      <div class="choose-color">
+                          <span class="color-1 active"></span>
+                          <span class="color-2"></span>
+                          <span class="color-3"></span>
+                          <span class="color-4"></span>
+                          <span class="color-5"></span>
+                      </div>
+                  </div>
+                      <!-- BACKGROUND COLOUR -->
+                    <div class="background">
+                        <h4>Background colour</h4>
+                        <div class="choose-bg">
+                            <div class="bg-1 active">
+                                <span></span>
+                                <h5 for="bg-1">Light</h5>
+                            </div>
+                            <div class="bg-2">
+                                <span></span>
+                                <h5 for="bg-2">Dark</h5>
+                            </div>
+                            <div class="bg-3">
+                                <span></span>
+                                <h5 for="bg-3">Very Dark</h5>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+ 
+    <section class="home" id="home">
+        <div class="row">
+            <!-- <div class="bg-img"></div> -->
+
+
+
+           <div class="Heading1">
+             <h1 class="heading">WELCOME TO INNOLATOR: <h6>Escalating Innovations...</h6></h1>
+             <p class="justpara">WHERE YOUR INNOVATIONS REACH OUT TO THE WORLD...</p>
+             <p class="paratext">If you think you have an innovation which can bring about even a small change in any person’s life on this planet then you are definitely for us !!  Submit your idea today and win exciting rewards and recognition.</p>
+             <button type="submit" class="submit-btn" id="submit-btn">Resister</button>
+           </div>
+            <div class="IMAGE">
+               
+                <img  class="Image-2" src="images/image-21.jpg" alt="">
+               
+            </div>
+        </div>
+    </section>
+
+
+    
+  <section class="Ideas" id="Ideas/Inno">
+    <div class="Ideas-Innovations">
+        <div class="Innovations">
+            <h1>IDEAS AND INNOVATIONS</h1>
+            <h5>is the practical implementation of ideas that result in the introduction of new goods or services or improvement in offering goods or services.</h5>
+
+            <p>Imagine you saw your mom struggling with the daily household chores of brooming and mopping the floor of your house and you came out with a solution to her problem : you innovated a machine called “Vacuum cleaners”. Well, vacuum cleaners are just one example out of the millions of innovations we are surrounded by and they need not be as big as the vacuum cleaner. From tooth brushes to safety pins — all are useful innovations which made our life easier. Innovations may not always be new gadgets . They can also be a better model of  the existing one like the wireless mouse is better version of the wired one. They can also be the cheaper version of something built out of scrap like roads built out of plastics. And when it comes to innovations who else can be better than Indians! We, at INNOLATOR are on a mission to identify Indian ” Jugaads ” (ideas/ innovations) which not only make our lives easier but are also cost effective and pave way for a sustainable tomorrow.</p>
+        </div>
+
+        <div class="segments">
+            <h1>WHAT'S YOUR IDEAS...</h1>
+            <P>Your ideas can belong to any field from science and engineering to management and banking. Some of the fields are as follows :</P>
+
+            <ol>
+                <li>Science</li>
+                <li>Engineering</li>
+                <li>Medicine</li>
+                <li>Lifestyle And Fashion</li>
+                <li>Banking And Finance</li>
+                <li>Business And Management Ideas</li>
+                <li>Teaching Methods</li>
+                <li>Home Science And Hotel Management</li>
+                <li>Any Other...</li>
+               
+            </ol>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="documentation" id="Docs">
+    
+    <div class="slide_container swiper">
+        <div class="slide_content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                   <div class="card-content">
+                        <h2 class="name"> ELIGIBILITY CRITERIA....</h2>
+                        <div class="_content">
+                        <ul class="description">
+                            <li>Anyone who thinks has an idea/innovation/solution to existing problems /problems you want a solution to can participate here.</li>
+                            <li>This contest is open to people of all age groups and professions.</li>
+                            <li>You do not need any educational qualifications/degrees to participate here.</li>
+                            <li>Citizens of India are eligible to participate.</li>
+                            <li>To know more about the kind of ideas that you can submit , scroll down and read the <i><b> IDEAS </b></i> section.</li>
+                            
+                        </ul>
+                       </div>
+                        <!-- <button class="button">View More</button> -->
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+
+                    <div class="card-content">
+                        <h2 class="name">RULES AND REGULATIONS....</h2>
+                      <div class="_content">
+                        <ul class="description">
+                            <li>Do not judge your own idea. Even if people/friends/relatives say that it is a silly one and make fun of you saying it is Indian “Jugaad” then also submit your idea here.</li>
+                            <li>Once you submit your idea here , kindly wait patiently and do not submit the same idea anywhere else.If done so, then you will be disqualified from the contest.</li>
+                            <li>Every participant can submit as many ideas as he/she likes.</li>
+                            <li>You can submit both- solutions to problems and problems (faced by large group of people) to which our team will find out solutions.</li>
+                        </ul>
+                      </div>
+
+                        <!-- <button class="button">View More</button> -->
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+
+                    <div class="card-content">
+                        <h2 class="name">REWARDS AND RECOGNITION.....</h2>
+                     <div class="_content">
+                      <ul class="description">
+                          <li>If one of your ideas gets selected then you will get :</li>
+                          <li>A certificate of merit from Innolator delivered to you by post or to your e-mail address ( as per your convinience).</li>
+                          <li>Monetary help to turn your idea into reality.</li>
+                          <li>Assistance from an expert team of leading professionals.</li>
+                          <li>A patent filed (free of cost).</li>
+                          <li>A chance to get internship offers (Both paid or non-paid).</li>
+                      </ul>
+                     </div>
+
+                        <!-- <button class="button">View More</button> -->
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+
+                    <div class="card-content">
+                        <h1 class="name">HOW TO SUBMIT YOUR IDEA</h1>
+                        <div class="_content">
+                        <ul class="description">
+                            <li>Click on the <i><b>SUBMIT</b></i>  button present on the top right corner of the Home page.</li>
+                            <li>A Registration page appears. Fill all the required fields and click on the submit  button.</li>
+                        </ul>
+                    </div>
+                        <!-- <button class="button">View More</button> -->
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+
+                    <div class="card-content">
+                        <h1 class="name">WHAT HAPPENS AFTER YOU SUBMIT YOUR IDEA...?</h1>
+                      <div class="_content">
+                        <ul class="description">
+                            <li>After you submit your idea, our group of experts consisting of top professionals from every field verify and analyze your idea.</li>
+                            <li>We get back to you within 2 working days to hold a small conversation.</li>
+                            <li>A three step verification process takes place and when approved ,the idea is sent to the Reward allotment team .</li>
+                            <li>The rewards allotment team decides the suitable rewards .</li>
+                            <li>Side by side, the finance team decides the budget for patent and technical assistance.</li>
+                            <li>The Technical team analyses the requirements of your ideas and prepares a blue print.</li>
+                            <li>Your idea is then ready to be presented to the world !!</li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+               
+                
+            </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+
+    </div>
+    
+
+</section>
+
+
+
+
+  <section class="Members" id="team">
+    <div class="swiper-container"> 
+        <div class="swiper-wrapper"> 
+         <div class="swiper-slide"> 
+          <div class="slide-container"> 
+           <div class="slide-card text-center">
+            <img class="slide-card-img-top" src="images/samiksha.jpg" alt=""> 
+            <div class="slide-card-body"> 
+             <h5>Samiksha Patel<br> <span> Founder </span> </h5> 
+             <p class="slide-card-text">“ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim dolorum illum dignissimos veniam inventore et rem adipisci suscipit illo tenetur! ” </p> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="swiper-slide"> 
+          <div class="slide-container"> 
+           <div class="slide-card text-center">
+            <img class="slide-card-img-top" src="images/me.jpg" alt=""> 
+            <div class="slide-card-body"> 
+             <h5>Kamalakanta Dalai<br> <span> Co-Founder </span> </h5> 
+             <p class="slide-card-text">“ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam laudantium similique quis explicabo nulla deleniti assumenda atque soluta alias veniam. ” </p> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="swiper-slide"> 
+          <div class="slide-container"> 
+           <div class="slide-card text-center"> 
+            <img class="slide-card-img-top" src="images/afroz.jpg" alt=""> 
+            <div class="slide-card-body"> 
+             <h5>Md. Afroj<br> <span> Web Developer </span> </h5> 
+             <p class="slide-card-text">“ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestias dolorem tenetur, expedita deleniti quis quod recusandae aperiam ea ab! ” </p> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="swiper-slide"> 
+          <div class="slide-container"> 
+           <div class="slide-card text-center">
+            <img class="slide-card-img-top" src="images/dhaudia.jpg" alt=""> 
+            <div class="slide-card-body"> 
+             <h5>Aditya Prasad<br> <span> Project Manager </span> </h5> 
+             <p class="slide-card-text">“ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore quam error asperiores eum expedita ad sed sapiente incidunt ipsa. ” </p> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       
+       </div>
+
+  </section>
+
+
+  <section class="members">
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+<script src="script.js"></script>
+
+</body>
+</html>
